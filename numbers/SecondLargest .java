@@ -1,0 +1,19 @@
+class SecondLargest{
+public static void main(String[] args){
+int n=834;
+int largest=1;
+int secondLargest=1;
+while (n!=0){
+int last=n%10;
+if(last>largest){
+secondLargest=largest;
+largest=last;
+} 
+else if(last>secondLargest && last!=largest){
+secondLargest=last;
+}
+n=n/10;
+}
+System.out.println(secondLargest);
+}
+}

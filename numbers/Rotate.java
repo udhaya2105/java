@@ -1,0 +1,23 @@
+class Rotate
+{
+public static String rotate(String s)
+{
+String res=" ";
+for(int i=0;i<=s.length()-2;i++)
+{
+res=res+s.charAt(i);
+}
+res=s.charAt(s.length()-1)+res;
+return res;
+}
+public static void main(String[] args)
+	{
+	String s="program";
+	String op="ramprog";
+	String s2="rotate(s);
+	if(op.equals(s2)){
+		System.out.println("can obtained");
+		return;
+	}
+	}
+	while(!s2.equals(s))

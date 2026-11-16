@@ -1,0 +1,39 @@
+import java.util.*;
+public class SpyinRange{
+public static boolean isSpy(int n)
+{
+int sum=0;
+int product=1;
+while(n!=0)
+{
+int digit=n%10;
+sum=sum+digit;
+product=product*digit;
+int n=n/10;
+}
+if(sum==product)
+{
+return true;
+}
+else{
+return false;	
+}
+}
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter Starting value");
+int start=sc.nextInt();
+System.out.println("Enter ending value");
+int end=sc.nextInt();
+for(int i=start;i<end;i++)
+{
+boolean b=isSpy(i);
+if(b==true)
+{
+System.out.println(i);
+}
+}
+}
+}
+

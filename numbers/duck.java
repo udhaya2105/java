@@ -1,0 +1,33 @@
+import java.util.*;
+public class duck{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the value");
+int n=sc.nextInt();
+int n1=n;
+int digit=0;
+int fdigit=0;
+while(n!=0)
+{ 
+digit=n%10;
+if(digit==0)
+{
+//System.out.println("duck number");
+break;
+}
+n/=10;
+}
+while(n1>9){
+	n1/=10;
+}
+fdigit=n1;
+
+if(fdigit!=0&&digit==0) {
+	System.out.println("DUCK");
+}
+else{
+	System.out.println("Not");
+}
+}
+}
